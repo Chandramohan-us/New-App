@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --neon-blue: #08f;
+  --neon-pink: #f0f;
+  --neon-green: #0f8;
+  --neon-purple: #80f;
+  --dark-bg: #111;
+}
+
+body {
+  background-color: var(--dark-bg);
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Neon Text */
+.neon-text {
+  text-shadow: 
+    0 0 5px var(--neon-blue),
+    0 0 10px var(--neon-blue),
+    0 0 20px var(--neon-blue);
+}
+
+/* Neon Button */
+.neon-button {
+  background: transparent;
+  border: 2px solid var(--neon-blue);
+  color: var(--neon-blue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 
+    0 0 5px var(--neon-blue),
+    inset 0 0 5px var(--neon-blue);
+}
+
+.neon-button:hover {
+  background: var(--neon-blue);
+  color: black;
+  box-shadow: 
+    0 0 20px var(--neon-blue),
+    0 0 40px var(--neon-blue);
+}
+
+/* Neon Card */
+.neon-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--neon-purple);
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s;
+  box-shadow: 
+    0 0 10px var(--neon-purple),
+    inset 0 0 10px var(--neon-purple);
+}
+
+.neon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 0 20px var(--neon-purple),
+    0 0 40px var(--neon-purple);
+}
